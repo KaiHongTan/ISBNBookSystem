@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller">
+   <children>
+      <Label alignment="CENTER" layoutX="154.0" layoutY="14.0" prefHeight="36.0" prefWidth="292.0" text="ISBN Price Checker">
+         <font>
+            <Font name="Montserrat Medium" size="24.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="154.0" layoutY="48.0" prefHeight="42.0" prefWidth="292.0" text="Check the price of a book based on its ISBN Number!" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="Montserrat Light" size="16.0" />
+         </font>
+      </Label>
+      <TextField id="inputnumber" fx:id="inputnumber" layoutX="136.0" layoutY="248.0" prefHeight="24.0" prefWidth="331.0" promptText="ISBN Number" />
+      <Label alignment="CENTER" layoutX="154.0" layoutY="107.0" prefHeight="36.0" prefWidth="292.0" text="Try the following ISBN Numbers:" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="Montserrat Light" size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="checkbutton" layoutX="250.0" layoutY="303.0" mnemonicParsing="false" onAction="#checkPrice" text="Check Price!" />
+      <TextField alignment="CENTER" editable="false" layoutX="216.0" layoutY="188.0" text="9780399588174">
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </TextField>
+      <TextField alignment="CENTER" editable="false" layoutX="216.0" layoutY="167.0" text="9789839820652">
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </TextField>
+      <TextField alignment="CENTER" editable="false" layoutX="216.0" layoutY="143.0" text="9789672464181">
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </TextField>
+   </children>
+</AnchorPane>
